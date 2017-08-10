@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f  
+
+RewriteRule ^cadastro/taxiaereo([^/]*)$ cadastro-taxiaereo.php [L]
+
+RewriteRule ^cadastro/taxiaereo/([^/]*)$ cadastro-taxiaereo.php?nivel_cadastro=$1 [L]
+
+RewriteRule ^aeronave/([^/]*)/([^/]*)$ aeronave.php?id=$1 [L]
+
+RewriteRule ^busca/([^/]*)/([^/]*)$ busca.php?$1=$2 [L]
+
+RewriteRule ^([^\.]+)/id/([a-z0-9-]+)/token/([A-Z0-9-]+)/?$ $1.php?id=$2&token=$3 [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+
+

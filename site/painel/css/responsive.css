@@ -1,0 +1,83 @@
+.only_responsive{
+	display:none !important;
+}
+
+@media (max-width: 700px){
+	#wrapper{
+		margin-top:0;
+		margin-bottom:0;
+		border-radius:0px;
+	}
+	.not_responsive{
+		display:none !important;
+	}
+	.only_responsive{
+		display:block !important;
+	}
+	.only_responsive.inline{
+		display:inline-block !important;
+	}
+
+	#top_menu ul li form input[type="text"]{
+		width:100px;
+	}
+
+	#sidebar_menu.oppened + #body_panel{
+		margin-left:60px !important;
+	}
+
+	.configs input[type="text"],
+	.configs input[type="password"],
+	.configs input[type="email"],
+	.configs input[type="url"]{
+		width:100%;
+	}
+
+	.container{
+		padding:5px;
+	}
+
+	.notifications{
+		width:260px;
+		left:-210px;
+	}
+
+	.notification_desc{
+		width:204px;
+	}
+
+	.notification_seta{
+		left:220px;
+	}
+
+	.mini_box,
+	.medium_box,
+	.medium_box2,
+	.big_box{
+		width:100%;
+		margin-left:0;
+		padding:10px;
+		margin-bottom:10px;
+	}
+
+	.container table tr,
+	.container table td{
+		font-size:15px;
+	}
+
+	.container .row{
+		padding-top:0px;
+	}
+
+	.container .column-1x4{ width:100%; }
+	.container .column-2x4{ width:100%; }
+	.container .column-3x4{ width:100%; }
+	.container .column-4x4{ width:100%; }
+
+	.container .widget{
+		width:calc(100% - 10px);
+		margin-right:5px;
+		margin-left:5px;
+		margin-bottom:10px;
+	}
+}
